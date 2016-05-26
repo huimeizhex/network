@@ -5,7 +5,7 @@ CC = g++
 CFLAGS = -g -Wall -std=c++0x
 INCLUDES = -I./
 
-all:$PROGS
+all:$(PROGS)
 
 protobuff_io:$(BASEOBJ)
 	$(CC) $(CFLAGS) -o $@ $^ $(LDLIBS)
